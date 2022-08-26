@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+
+
+.scheme .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-top: 100px;
+
+}
+.scheme__text ol{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.scheme__text h4{
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 1.36363636;
+    color: #fff;
+    font-family: "Roboto Light",sans-serif;
+    margin-bottom: 50px;
+}
+.scheme__text .text1::before {
+    background-color: #1e9d59;
+}
+.scheme__text .text2::before {
+    background-color: #00b6be;
+}
+.scheme__text .text3::before {
+    background-color: #ffb218;
+}
+.scheme__text .text4::before {
+    background-color: #0095da;
+}
+.scheme__text .text5::before {
+    background-color: #ff8514;
+}
+.scheme__text .text6::before {
+
+    background-color: #374ea2;;
+}
+.scheme__text li::before {
+    content: " ";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 70%;
+    height: 10px;
+    z-index: -1;
+}
+.scheme__text li{
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.33333333;
+    color: #fff;
+    display: block;
+    position: relative;
+    opacity: .6;
+    transition: .25s ease-out;
+    transition-property: opacity;
+}
+.scheme__text li:hover{
+    opacity: 1;
+}
+.scheme__mockup{
+    position: relative;
+}
+
+.scheme__plan_disabled {
+    position: relative;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,.15));
+    z-index: 0;
+}
+.scheme__layer.active {
+    opacity: 1;
+    visibility: visible;
+    filter: drop-shadow(0 0 35px rgba(255,255,255,.2));
+}
+
+.scheme__layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .2;
+    visibility: visible;
+    filter: none;
+    transition: .25s ease-out;
+    transition-property: opacity,visibility;
+}
+h2{
+    text-align: center;
+}
+.h4{
+    margin-left: 100px;
+}
